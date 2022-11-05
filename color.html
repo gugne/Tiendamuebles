@@ -1,0 +1,135 @@
+#A34D2E
+#FF9E7A
+#F0815A
+#1DA389
+#5BF0D2
+
+---- CUANDO USAR A PARA BOTONES Y DEMÁS----
+siempre que nos refiera a otra parte del sitio o un sitio externo
+
+
+-------------------------------------------
+
+Etiqueta= div , a, img. Selector más debil
+0001
+
+
+class= se puede repetir, puedes agregarlo varias veces.
+se llama con .class 
+
+0010
+
+id= el elemento es único, no lo deberías repetir
+por buenas prácticas.
+Se llama con #id
+0100
+
+Se llama por preferencia de acuerdo al número
+id>class>etiquetas
+
+box model: Es una caja
+-contenido
+-padding: separación de los bordes de la caja. 
+El padding nos añade el tamaño del padding a cada lado al 
+tamaño de la caja, se debe usar un border-sizing: border-box
+-borde
+-margen
+
+Normalizar CSS: Todos los navegadores visualizan de forma 
+diferente
+
+ir a normalize, copiar codigo y pegar en un archivo de css.
+
+#Display
+
+*Block: Se pone un debajo del otro (Los parrafos)
+*inline: Se posiciona a la derecha (los links a )
+*inline-block: Permite dar witdh , height y margin
+
+flex -box:
+filas y columnas
+se aplica en el elemento padre.
+No en el padre del padre
+ni el los elementos
+ejemlo div1>div1>a>
+Para añadirlo a los a, se debe poner en el div 2
+
+No se puede combinar con grid
+
+------FACTOR DE CRECIMIENTO EN FLEXBOX----
+--Flex-basis: tamaño mínimo de nuestras cajas --
+
+Las cajas de flex no crecen horizontalmente.
+flexgrow: 1
+Crecen hasta ocupar todo el tamaño.
+reparte de forma equitatiba los pixeles ej:
+a:1
+b:1
+c:1
+a:2
+b:2
+c:2 y así sucesivamente hasta ocupar todos los pixeles 
+disponibles en el contenedor. 
+
+#El factor de crecimiento por defecto es 0. La caja se ajusta
+al contenido.
+
+FLEX-SHRINK: Factor de contracción.
+El valor declarado por default es
+flex-shrink: 1; 
+
+#A medida que se reduce el tamaño, el flexbox se reduce en 1
+a menos que pasemos un valor diferente en flex-shrink.
+---->se puede usar en un elemento hijo para que se haga
+más pequeño que el resto.
+
+--Flex-shorthand: agrupa los 3 vistos anteriormente--
+#se declara:
+flex: 1(fflex-gro) 1 (flex-shrink) 33%(flex basis);
+
+
+
+grid:
+Colomumnas-> grid-template-colums
+Filas-> grid-tamplate-rows
+grid cell-> termino cuando el grid tiene
+columnas y filas
+grid area-> cuando le ponemos nombre a una 
+celda del grid
+Se recomienda usar fr (fracción en vez de px)
+gap-> separación
+
+
+TAMAÑOS EN CSS:
+ABSOLUTOS: Px o Cm
+RELATIVOS: EM, REM
+El em varia acorde al elemento padre.
+
+
+ESCRITURA CSS:
+
+BEM-> BLOCK ELEMENTOR MODIFIER
+SMACKS->
+
+
+----------MEDIA QUERIES-----
+
+se usa en la hoja de css
+
+@media (max-width: 800px) --->el max-width se utiliza en desktop first
+
+Si lo hago con mobile first, empiezo a maquetar en tamaño mobil y uso:
+
+@media (min-width: 800px) en vez de max
+
+
+SOLO USAR UNO, SE MAX-WIDTH O MIN-WIDTH, NO REVOLVERLOS NUNCA!!!!!
+
+****REVISAR RWD_FIN DESDE EL 4 EN ADELANTE
+
+Estandares.
+min 550
+min 768-800
+min 1024
+min 1200
+min 1600

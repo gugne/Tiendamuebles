@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><!-- Acá ponemos información meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+<body>
+    
+    
+    <h1 class="site_name">Tienda <span>Muebles</span></h1>
+
+    <nav class="nav container">
+        <a href="index.html">Inicio</a>
+        <a href="about_us.html">Nosotros</a>
+        <a href="shop.html">Tienda</a>
+        <a href="blog.html">Blog</a>
+        <a href="gallery.html">Galeria</a>
+        <a href="contact_us.html">Contacto</a>
+    
+    </nav>
+
+    <main class="principal container">
+        <h2>Contacto</h2>
+
+        <form class="form">
+            <fieldset>
+                <legend>Tus datos</legend>
+                <div class="form_field">
+                    <label for="name">Nombre:</label>
+                    <input id="name" type="text" placeholder="Digita tu nombre" required>
+                </div>
+                <div class="form_field">
+                    <label for="subject">Asunto:</label>
+                    <input  id="subject" type="text" placeholder="Tema de consulta">
+                </div>
+                <div class="form_field">
+                    <label for="email">E-mail:</label>
+                    <input  id="email" type="email" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="form_field">
+                    <label for="tel">Teléfono:</label>
+                    <input  id="tel" type="tel" placeholder="Tu número de contacto">
+                </div>
+                <div class="form_field">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" cols="20" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>País</legend>
+                <div class="form_field">
+                    <label for="country">País:</label>
+                    <select id="country">
+                        <option disabled>-- Elija su País --</option> <!-- Disable: No seleccionable-->
+                        <option value="CO" selected>Colombia</option> <!-- Selected: Valor por defecto-->
+                        <option value="MX">México</option>
+                        <option value="PR">Perú</option>
+                        <option value="ECU">Ecuador</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Información extra</legend>
+                <!-- Se puede usar checkbox en vez de radio cuando necesito seleccionar varias opciones-->
+                <div class="form_field">
+                    <label for="client">Cliente</label>
+                    <input id="client" type="radio" name="are_you" value="client"> <!-- name: me vincula los input tipo radio-->
+                </div>
+                <div class="form_field">
+                    <label for="provider" >Proveedor</label>
+                    <input id="provider" type="radio" name="are_you" value="provider"> <!-- name: me vincula los input tipo radio-->
+                </div>
+                <div class="form_field">
+                    <label for="interest">Categoría de Interés:</label>
+                    <input list="interest" name="interest">
+                    <datalist id="interest">
+                        <option value="Cocina">
+                        <option value="Exterior">
+                        <option value="Recamaras">
+                        <option value="Oficina">
+                        <option value="Televisores"> <!-- Datalist: No se cierra el option pero se asigna value-->
+                    </datalist>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Enviar Formulario">
+
+        </form>
+    </main>
+    <footer>
+        <section class="footer container">
+            <div class="footer_grid">
+                <h3>Categorias</h3>
+                <nav>
+                    <a href="#">Cocina</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardín</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorios</a>
+                </nav>
+            </div>  
+            <div class="footer_grid">
+                <h3>Sobre Nosotros</h3>
+                <nav>
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Misión, Visión y Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                </nav>
+            </div>
+            
+            <div class="footer_grid">
+                <h3>Soporte</h3>
+                <nav>
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Ayuda en Línea</a>
+                    <a href="#">Confianza y Seguridad</a>
+                </nav>
+            </div>
+            <p class="text_footer"> © Moebius Abogados 2020, Todos los derechos reservados.</p>
+        </section>
+        </footer>
+</body>
+</html>
