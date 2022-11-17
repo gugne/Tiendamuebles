@@ -4,7 +4,7 @@ CSS and HTML exercise from the course "CSS The Complete Guide - Flexbox, CSS Gri
 It's possible that the code does not match 100% with the code of the course because during the exercises, i was trying to solve each of the problems before the tutor did them.
 
 ## Live Demo
-https://roaring-pika-c2e34e.netlify.app/
+https://sprightly-taiyaki-a10f3f.netlify.app
 
 ## Web-version
 ![Web-version](/screenshots/Tienda%20Muebles.jpg)
